@@ -16,11 +16,12 @@ public class Menu {
 
   private final CreatListCommand mapCommand;
   private final ConsoleReader sc;
-  private List<Entry<String, Command>> listCommands = null;
+  private List<Entry<String, Command>> listCommands;
 
   public Menu(CreatListCommand command, ConsoleReader scanner) {
     this.mapCommand = command;
     this.sc = scanner;
+    this.listCommands = null;
   }
 
   public void show() {
@@ -37,11 +38,6 @@ public class Menu {
 
       opcao = this.sc.getString();
 
-      if (opcao.equals(MenuOptions.EXIT.getCode())) {
-        getCommand(5).executar();
-        break;
-      }
-
       Command cmd = null;
 
       try {
@@ -57,7 +53,7 @@ public class Menu {
 
       System.out.println("\nOpção Invalida\n");
 
-    } while (true);
+    } while (!opcao.equals(MenuOptions.EXIT.getCode()));
   }
 
   private Command getCommand(int index) {

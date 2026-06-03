@@ -15,7 +15,7 @@ public class ConsoleReader {
   }
 
   public String getString() {
-    return scanner.nextLine();
+    return scanner.nextLine().trim();
   }
 
   public int getInt() {

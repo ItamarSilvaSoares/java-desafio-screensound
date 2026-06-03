@@ -1,7 +1,5 @@
 # Desafio
 
----
-
 Vamos implementar uma aplicação para armazenar dados de nossos artistas e músicas preferidos em um
 banco de dados relacional, podendo buscar informações por artistas e consultar dados sobre os mesmos
 por integração com a API do ChatGPT.
@@ -19,8 +17,6 @@ por integração com a API do ChatGPT.
   chamar o menu criado.
 
 ## 🔨 Objetivos do projeto
-
----
 
 - O objetivo do projeto é praticar a modelagem de classes e relacionamentos utilizando o Spring Data
   JPA;
