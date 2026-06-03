@@ -22,7 +22,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     compileOnly("org.projectlombok:lombok")
     runtimeOnly("org.postgresql:postgresql")
-    implementation("com.openai:openai-java:4.38.0")
+    implementation("com.theokanning.openai-gpt3-java:service:0.18.2")
     implementation("io.github.cdimascio:dotenv-java:3.2.0")
     implementation("tools.jackson.core:jackson-databind")
     annotationProcessor("org.projectlombok:lombok")
